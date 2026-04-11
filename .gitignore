@@ -16,6 +16,8 @@ wheels/
 transform/target/
 transform/dbt_packages/
 transform/logs/
+logs/
+
 
 # DuckDB — data file, not code
 *.duckdb
