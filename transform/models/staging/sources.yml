@@ -1,0 +1,15 @@
+# This tells dbt that raw.service_requests and raw.weather_daily exist but were not created by dbt:
+
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: "Raw data landed by dlt ingestion pipeline"
+
+    tables:
+      - name: service_requests
+        description: "NYC 311 service requests from Socrata API"
+
+      - name: weather_daily
+        description: "Daily weather data for NYC from Open-Meteo"
